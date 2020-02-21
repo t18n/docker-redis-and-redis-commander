@@ -21,8 +21,8 @@ services:
     restart: always
     environment:
       - REDIS_HOSTS=local:redis:6379:4:S3cr3t
-      - HTTP_USER=turbo
-      - HTTP_PASSWORD=S3cr3t
+      # - HTTP_USER=turbo
+      # - HTTP_PASSWORD=S3cr3t
     ports:
       - "8081:8081"
     depends_on:
